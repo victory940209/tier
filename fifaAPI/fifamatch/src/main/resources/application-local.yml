@@ -1,0 +1,18 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: fifaSpid
+  pid:
+    file: /data1/api/fifaSpid.pid
+
+logging:
+  config: classpath:logback-local.xml
+  
+springdoc:
+  swagger-ui:
+    path: /doc/swagger
+    operations-sorter: method
+
+
