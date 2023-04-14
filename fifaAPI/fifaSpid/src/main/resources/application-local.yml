@@ -6,7 +6,12 @@ spring:
     name: fifaSpid
   pid:
     file: /data1/api/fifaSpid.pid
-
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: DB_TIER_FIFA
+      
 logging:
   config: classpath:logback-local.xml
   

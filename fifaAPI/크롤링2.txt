@@ -1,0 +1,31 @@
+<div class="data_header"> 
+    <div class="th year">
+     연도
+    </div> 
+    <div class="th club">
+     클럽
+    </div> 
+    <div class="th rent">
+     임대 여부
+    </div> 
+   </div> 
+   <div class="data_table"> 
+    <ul> 
+     <li> 
+      <div class="td year">
+       2009 ~ 
+      </div> 
+      <div class="td club">
+       레알 마드리드
+      </div> 
+      <div class="td rent"></div> </li> 
+     <li> 
+      <div class="td year">
+       2005 ~ 2009
+      </div> 
+      <div class="td club">
+       올랭피크 리옹
+      </div> 
+      <div class="td rent"></div> </li> 
+    </ul> 
+   </div>

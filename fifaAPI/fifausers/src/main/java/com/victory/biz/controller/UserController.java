@@ -8,10 +8,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.victory.biz.model.DivisionVo;
 import com.victory.biz.model.MatchVo;
 import com.victory.biz.model.MaxdivisionVo;
 import com.victory.biz.model.SearchInfoVo;
 import com.victory.biz.model.UserVo;
+import com.victory.biz.service.MongoDBService;
 import com.victory.biz.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -22,6 +24,22 @@ public class UserController {
 
 	@Autowired
 	UserService userService;
+
+	@Autowired
+	private MongoDBService mongoDBService;
+
+	@PostMapping(value = "/test/mongodb")
+	public DivisionVo test(@RequestBody DivisionVo params) throws Exception{
+
+		log.info("asdasd : " + params);
+		DivisionVo  getDivisionId = mongoDBService.selectDivisionId(params.getDivisionId());
+		DivisionVo getDivisionName =  mongoDBService.selectDivisionNm(params.getDivisionName());
+
+		log.info("getDivisionId : " + getDivisionId);
+		log.info("getDivisionName : " + getDivisionName);
+
+		return getDivisionName;
+	}
 
 
 	@PostMapping(value = "/getUserToNickNm/{nickNm}")
@@ -41,4 +59,6 @@ public class UserController {
 
 		return userService.getUserMaxdivision(accessid);
 	}
+
+
 }

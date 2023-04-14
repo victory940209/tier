@@ -1,0 +1,591 @@
+detail : <div class="wrap"> 
+ <div class="content_header"> 
+  <div class="thumb 23toty  _23TOTY"> 
+   <div class="card_back">
+    <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/23TOTY.png" alt="">
+   </div> 
+   <div class="img">
+    <img src="https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p278165153.png?rd=202304140400" 
+    alt="" onerror="this.src='https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/players/not_found.png'">
+   </div> 
+   <div class="live_wrap"> 
+   </div> 
+   <div class="r_ovr">
+    (<span class="value">111</span>)
+   </div> 
+   <div class="ovr value">
+    111
+   </div> 
+   <div class="position">
+    CF
+   </div> 
+   <div class="nation">
+    <img src="https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/countries/smallflags/18.png" alt="">
+   </div> 
+   <div class="season">
+    <img src="https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/crests/light/small/l130081.png" alt="">
+   </div> 
+   <div class="en_wrap selector_wrap"> <a href="#" class="ability en_level1">1</a> 
+   </div> 
+   <div class="name_wrap"> 
+    <div class="season">
+     <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23TOTY.png" alt="">
+    </div> 
+    <div class="name">
+     카림 벤제마
+    </div> 
+   </div> 
+   <div class="pay">
+    29
+   </div> 
+  </div> 
+  <div class="info_wrap"> 
+   <div class="info_line info_name"> 
+    <div class="season">
+     <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23TOTY.png" alt="">
+    </div> 
+    <div class="name">
+     카림 벤제마
+    </div> 
+    <div class="side_utils"> 
+     <div class="pay_side">
+      29
+     </div> <a href="javascript:;" class="btn_collect " onclick="DataCenter.SetPlayerFavorit(this, 278165153, 1)"></a> <a href="javascript:;" onclick="DataCenter.GetPlayerGrow(this,278165153,'', 1);" class="btn_boost_helper"></a> 
+    </div> 
+   </div> 
+   <div class="info_line info_ab"> <span class="position fw"><span class="txt">CF</span><span class="skillData_278165153 value">111</span></span> <span class="position fw"><span class="txt">ST</span><span class="skillData_278165153 value">111</span></span> 
+   </div> 
+   <div class="info_line info_etc"> <span class="etc birth">1987.12.19 (37세) </span> <span class="etc height">185cm</span> <span class="etc weight">81kg</span> <span class="etc physical">보통</span> <span class="etc skill"> <span>★★★★</span>☆☆ </span> <span class="etc foot"> L5 – <strong>R5</strong> </span> <span class="etc season">월드클래스</span> 
+   </div> 
+   <div class="info_line info_team"> 
+    <div class="etc team"> <span class="img"> <img src="https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/crests/light/small/l130081.png" alt=""> </span> <span class="txt"></span> 
+    </div> 
+    <div class="etc nation"> <span class="img"><img src="https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/countries/smallflags/18.png" alt=""></span> <span class="txt">프랑스</span> 
+    </div> 
+   </div> 
+   <div class="skill_wrap"> 
+    <div class="tit">
+     특성
+    </div> 
+    <span>예리한 감아차기</span>, <span>플레이 메이커</span>, <span>파워 헤더</span> 
+   </div> 
+   <div class="en_selector_wrap"> 
+    <div class="en_selector"> 
+     <div class="en"> 
+      <div class="tit">
+       강화
+      </div> 
+      <div class="en_wrap selector_wrap en_wrap_278165153"> <a href="#" class="ability en_level1">1</a> 
+       <div class="selector_list"> 
+        <ul> 
+         <li><a class="selector_item en_level0" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('0/0', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 0, 'PlayerPriceGraph'); SetSkill(0);">-</a></li> 
+         <li><a class="selector_item en_level1" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('1/3', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 1, 'PlayerPriceGraph'); SetSkill(1);">1</a></li> 
+         <li><a class="selector_item en_level2" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('2/4', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 2, 'PlayerPriceGraph'); SetSkill(2);">2</a></li> 
+         <li><a class="selector_item en_level3" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('3/5', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 3, 'PlayerPriceGraph'); SetSkill(3);">3</a></li> 
+         <li><a class="selector_item en_level4" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('4/7', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 4, 'PlayerPriceGraph'); SetSkill(4);">4</a></li> 
+         <li><a class="selector_item en_level5" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('5/9', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 5, 'PlayerPriceGraph'); SetSkill(5);">5</a></li> 
+         <li><a class="selector_item en_level6" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('6/11', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 6, 'PlayerPriceGraph'); SetSkill(6);">6</a></li> 
+         <li><a class="selector_item en_level7" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('7/14', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 7, 'PlayerPriceGraph'); SetSkill(7);">7</a></li> 
+         <li><a class="selector_item en_level8" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('8/18', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 8, 'PlayerPriceGraph'); SetSkill(8);">8</a></li> 
+         <li><a class="selector_item en_level9" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('9/22', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 9, 'PlayerPriceGraph'); SetSkill(9);">9</a></li> 
+         <li><a class="selector_item en_level10" href="#" data-no="278165153" onclick="DataCenter.SetSkillPoint('10/27', 'value', 'Strong278165153'); DataCenter.GetPlayerPriceChart(this, '278165153', 10, 'PlayerPriceGraph'); SetSkill(10);">10</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="adap"> 
+      <div class="tit">
+       적응도
+      </div> 
+      <div class="adap_wrap selector_wrap"> <a href="#" class="ability">+1</a> 
+       <div class="selector_list"> 
+        <ul> 
+         <li><a class="selector_item adap1" href="#" onclick="DataCenter.SetSkillPoint2(0, 'value', 'Grow278165153')">+1</a></li> 
+         <li><a class="selector_item adap2" href="#" onclick="DataCenter.SetSkillPoint2(1, 'value', 'Grow278165153')">+2</a></li> 
+         <li><a class="selector_item adap3" href="#" onclick="DataCenter.SetSkillPoint2(2, 'value', 'Grow278165153')">+3</a></li> 
+         <li><a class="selector_item adap4" href="#" onclick="DataCenter.SetSkillPoint2(3, 'value', 'Grow278165153')">+4</a></li> 
+         <li><a class="selector_item adap5" href="#" onclick="DataCenter.SetSkillPoint2(4, 'value', 'Grow278165153')">+5</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="tcolor"> 
+      <div class="tit">
+       팀컬러
+      </div> 
+      <div class="tcolor_wrap selector_wrap"> <a href="#" class="ability">0</a> 
+       <div class="selector_list"> 
+        <ul> 
+         <li><a class="selector_item tcolor0" onclick="DataCenter.SetSkillPoint2(0, 'value', 'TeamColor278165153')">-</a></li> 
+         <li><a class="selector_item tcolor1" onclick="DataCenter.SetSkillPoint2(1, 'value', 'TeamColor278165153')">+1</a></li> 
+         <li><a class="selector_item tcolor2" onclick="DataCenter.SetSkillPoint2(2, 'value', 'TeamColor278165153')">+2</a></li> 
+         <li><a class="selector_item tcolor3" onclick="DataCenter.SetSkillPoint2(3, 'value', 'TeamColor278165153')">+3</a></li> 
+         <li><a class="selector_item tcolor4" onclick="DataCenter.SetSkillPoint2(4, 'value', 'TeamColor278165153')">+4</a></li> 
+         <li><a class="selector_item tcolor5" onclick="DataCenter.SetSkillPoint2(5, 'value', 'TeamColor278165153')">+5</a></li> 
+         <li><a class="selector_item tcolor6" onclick="DataCenter.SetSkillPoint2(6, 'value', 'TeamColor278165153')">+6</a></li> 
+         <li><a class="selector_item tcolor7" onclick="DataCenter.SetSkillPoint2(7, 'value', 'TeamColor278165153')">+7</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="ovr_set"> 
+   <div class="position st value">
+    111
+   </div> 
+   <div class="position lw value">
+    110
+   </div> 
+   <div class="position cf value">
+    111
+   </div> 
+   <div class="position rw value">
+    110
+   </div> 
+   <div class="position cam value">
+    111
+   </div> 
+   <div class="position lm value">
+    109
+   </div> 
+   <div class="position cm value">
+    105
+   </div> 
+   <div class="position rm value">
+    109
+   </div> 
+   <div class="position cdm value">
+    86
+   </div> 
+   <div class="position lwb value">
+    85
+   </div> 
+   <div class="position cb value">
+    76
+   </div> 
+   <div class="position rwb value">
+    85
+   </div> 
+   <div class="position lb value">
+    81
+   </div> 
+   <div class="position sw value">
+    76
+   </div> 
+   <div class="position rb value">
+    81
+   </div> 
+   <div class="position gk value">
+    26
+   </div> 
+  </div> 
+ </div> 
+ <div class="content_middle"> 
+  <div class="season_match"> 
+   <div class="tit"> <span>클래스 비교</span> 
+   </div> 
+   <div class="td"> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(201165153);"> 
+     <input type="radio" id="season_NHD" name="radioVS" class="season_check season_NHD" disabled> <label class="_season_vs_label" for="season_NHD" alt="NHD" title="NHD" data-diff="0,0,-28,-32,-37,-34,-39,-34,-28,-28,-32,-30,-32,-29,-41,-34,-32,-40,-25,-58,-37,-36,-33,-36,-29,-43,-31,-46,-35,-38,-37,-32,-36,-34,-29,-37,-43,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/NHD.png" alt="NHD"> <span class="diff minus">-32</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(206165153);"> 
+     <input type="radio" id="season_TB" name="radioVS" class="season_check season_TB" disabled> <label class="_season_vs_label" for="season_TB" alt="TB" title="TB" data-diff="0,0,-25,-30,-32,-28,-37,-32,-25,-25,-32,-27,-28,-23,-26,-32,-28,-27,-23,-56,-35,-34,-27,-29,-27,-41,-20,-44,-33,-36,-30,-30,-33,-32,-27,-35,-41,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/TB.png" alt="TB"> <span class="diff minus">-27</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(207165153);"> 
+     <input type="radio" id="season_TT" name="radioVS" class="season_check season_TT" disabled> <label class="_season_vs_label" for="season_TT" alt="TT" title="TT" data-diff="0,0,-24,-30,-32,-28,-36,-31,-24,-24,-32,-26,-27,-27,-27,-31,-29,-26,-22,-55,-34,-33,-27,-30,-26,-40,-24,-43,-32,-35,-32,-29,-32,-31,-26,-34,-40,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/TT.png" alt="TT"> <span class="diff minus">-28</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(214165153);"> 
+     <input type="radio" id="season_TC" name="radioVS" class="season_check season_TC" disabled> <label class="_season_vs_label" for="season_TC" alt="TC" title="TC" data-diff="0,0,-14,-23,-28,-21,-31,-22,-13,-14,-25,-20,-19,-20,-25,-28,-24,-29,-15,-52,-34,-26,-19,-25,-15,-27,-19,-34,-24,-38,-28,-29,-22,-20,-24,-29,-23,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/TC.png" alt="TC"> <span class="diff minus">-21</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(215165153);"> 
+     <input type="radio" id="season_19TOTS" name="radioVS" class="season_check season_19TOTS" disabled> <label class="_season_vs_label" for="season_19TOTS" alt="19TOTS" title="19TOTS" data-diff="0,0,-14,-21,-24,-16,-20,-22,-10,-17,-19,-20,-21,-22,-22,-27,-19,-24,-26,-25,-34,-21,-13,-20,-10,-31,-12,-9,-23,-29,-20,-22,-23,-18,-22,-21,-20,-3,-3,-10,-8,-8"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19TOTS.png" alt="19TOTS"> <span class="diff minus">-18</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(216165153);"> 
+     <input type="radio" id="season_HOT" name="radioVS" class="season_check season_HOT" disabled> <label class="_season_vs_label" for="season_HOT" alt="HOT" title="HOT" data-diff="0,0,-11,-22,-23,-16,-19,-21,-11,-11,-21,-24,-17,-23,-25,-23,-20,-26,-22,-22,-26,-26,-14,-21,-8,-25,-16,-3,-23,-32,-22,-23,-24,-19,-17,-18,-19,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/HOT.png" alt="HOT"> <span class="diff minus">-19</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(221165153);"> 
+     <input type="radio" id="season_19UCL" name="radioVS" class="season_check season_19UCL" disabled> <label class="_season_vs_label" for="season_19UCL" alt="19UCL" title="19UCL" data-diff="0,0,-17,-20,-21,-19,-11,-21,-17,-15,-20,-16,-20,-17,-22,-26,-17,-22,-20,-21,-32,-28,-18,-19,-21,-36,-12,-10,-9,-9,-20,-16,-20,-25,-20,-20,-20,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19UCL.png" alt="19UCL"> <span class="diff minus">-17</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(222165153);"> 
+     <input type="radio" id="season_20TOTN" name="radioVS" class="season_check season_20TOTN" disabled> <label class="_season_vs_label" for="season_20TOTN" alt="20TOTN" title="20TOTN" data-diff="0,0,-11,-18,-22,-16,-19,-16,-9,-12,-18,-18,-17,-14,-22,-21,-18,-27,-20,-17,-31,-29,-12,-24,-9,-14,-13,-12,-26,-17,-18,-26,-14,-17,-20,-13,-17,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20TOTN.png" alt="20TOTN"> <span class="diff minus">-17</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(230165153);"> 
+     <input type="radio" id="season_20TOTS" name="radioVS" class="season_check season_20TOTS" disabled> <label class="_season_vs_label" for="season_20TOTS" alt="20TOTS" title="20TOTS" data-diff="0,0,-6,-14,-17,-12,-10,-12,-4,-8,-13,-15,-12,-11,-16,-19,-15,-22,-13,-12,-22,-19,-9,-18,-6,-6,-14,0,-6,-20,-17,-23,-11,-12,-13,-10,-11,-3,-2,-8,-9,-9"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20TOTS.png" alt="20TOTS"> <span class="diff minus">-13</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(234165153);"> 
+     <input type="radio" id="season_LH" name="radioVS" class="season_check season_LH" disabled> <label class="_season_vs_label" for="season_LH" alt="LH" title="LH" data-diff="0,0,-18,-28,-28,-18,-18,-23,-18,-18,-26,-28,-29,-26,-28,-29,-26,-31,-22,-32,-34,-31,-15,-25,-13,-19,-16,-9,-23,-21,-25,-19,-24,-22,-23,-21,-23,-3,-3,-13,-13,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/LH.png" alt="LH"> <span class="diff minus">-23</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(237165153);"> 
+     <input type="radio" id="season_MC" name="radioVS" class="season_check season_MC" disabled> <label class="_season_vs_label" for="season_MC" alt="MC" title="MC" data-diff="0,0,-7,-14,-18,-12,-9,-13,-6,-7,-13,-17,-8,-15,-15,-31,-15,-19,-18,-17,-21,-17,-9,-19,-5,-7,-8,-9,-4,-7,-19,-15,-16,-6,-16,-9,-12,-6,-9,-9,-15,-4"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/MC.png" alt="MC"> <span class="diff minus">-13</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(241165153);"> 
+     <input type="radio" id="season_21TOTN" name="radioVS" class="season_check season_21TOTN" disabled> <label class="_season_vs_label" for="season_21TOTN" alt="21TOTN" title="21TOTN" data-diff="0,0,-5,-13,-14,-12,-4,-9,-3,-6,-14,-13,-11,-10,-13,-15,-12,-15,-14,-11,-21,-14,-9,-19,-5,-7,-10,0,-2,-5,-17,-7,-10,-6,-11,-13,-11,-6,-9,-9,-6,-7"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21TOTN.png" alt="21TOTN"> <span class="diff minus">-12</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(242165153);"> 
+     <input type="radio" id="season_20UCL" name="radioVS" class="season_check season_20UCL" disabled> <label class="_season_vs_label" for="season_20UCL" alt="20UCL" title="20UCL" data-diff="0,0,-8,-17,-17,-17,-7,-12,-7,-9,-17,-21,-14,-13,-15,-19,-13,-14,-19,-18,-23,-24,-13,-26,-9,-13,-12,-4,-5,-6,-21,-11,-14,-5,-12,-16,-16,-5,-5,-5,-9,-13"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20UCL.png" alt="20UCL"> <span class="diff minus">-15</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(250165153);"> 
+     <input type="radio" id="season_21TOTS" name="radioVS" class="season_check season_21TOTS" disabled> <label class="_season_vs_label" for="season_21TOTS" alt="21TOTS" title="21TOTS" data-diff="0,0,-5,-9,-10,-9,0,-6,-5,-5,-10,-9,-5,-8,-10,-11,-10,-9,-11,-8,-16,-9,-7,-14,-3,-5,-8,4,4,-2,-16,2,-6,-3,-9,-8,-8,-3,-7,-9,-14,-9"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21TOTS.png" alt="21TOTS"> <span class="diff minus">-9</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(251165153);"> 
+     <input type="radio" id="season_EBS" name="radioVS" class="season_check season_EBS" disabled> <label class="_season_vs_label" for="season_EBS" alt="EBS" title="EBS" data-diff="0,0,-8,-18,-17,-13,-8,-12,-8,-7,-20,-17,-11,-16,-16,-16,-17,-20,-12,-13,-21,-16,-9,-20,-8,-10,-17,-6,-5,-7,-21,-14,-15,-9,-11,-8,-13,-4,-4,-12,-12,-11"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/EBS.png" alt="EBS"> <span class="diff minus">-16</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(253165153);"> 
+     <input type="radio" id="season_BOE21" name="radioVS" class="season_check season_BOE21" disabled> <label class="_season_vs_label" for="season_BOE21" alt="BOE21" title="BOE21" data-diff="0,0,-7,-10,-11,-10,1,-9,-7,-7,-12,-7,-6,-9,-16,-13,-9,-17,-13,-3,-18,-8,-8,-15,-4,-7,-10,8,3,-7,-12,7,-11,-6,-7,-4,-10,-2,-2,-10,-10,-9"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/BOE21.png" alt="BOE21"> <span class="diff minus">-10</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(256165153);"> 
+     <input type="radio" id="season_BTB" name="radioVS" class="season_check season_BTB" disabled> <label class="_season_vs_label" for="season_BTB" alt="BTB" title="BTB" data-diff="0,0,-5,-10,-10,-9,4,-5,-4,-6,-11,-7,-8,-8,-12,-14,-9,-11,-11,-6,-15,-10,-8,-12,-4,-6,-6,10,6,-5,-8,9,-5,-5,-5,-3,-9,-3,-3,-8,-9,-6"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/BTB.png" alt="BTB"> <span class="diff minus">-8</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(259165153);"> 
+     <input type="radio" id="season_22TOTN" name="radioVS" class="season_check season_22TOTN" disabled> <label class="_season_vs_label" for="season_22TOTN" alt="22TOTN" title="22TOTN" data-diff="0,0,-6,-9,-9,-9,2,-7,-5,-7,-9,-9,-4,-8,-9,-12,-10,-10,-5,-2,-17,-11,-8,-11,-4,-6,-9,6,1,1,-6,1,-6,-7,-8,-6,-8,-8,-2,-11,-7,-7"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22TOTN.png" alt="22TOTN"> <span class="diff minus">-8</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(260165153);"> 
+     <input type="radio" id="season_21UCL" name="radioVS" class="season_check season_21UCL" disabled> <label class="_season_vs_label" for="season_21UCL" alt="21UCL" title="21UCL" data-diff="0,0,-4,-8,-8,-7,8,-5,-3,-5,-9,-7,-4,-5,-8,-9,-9,-11,-4,-1,-14,-7,-6,-11,-3,-5,-6,16,10,8,-11,4,-7,-4,-3,-4,-8,0,2,-5,-7,-2"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21UCL.png" alt="21UCL"> <span class="diff minus">-7</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(267165153);"> 
+     <input type="radio" id="season_22TOTS" name="radioVS" class="season_check season_22TOTS" disabled> <label class="_season_vs_label" for="season_22TOTS" alt="22TOTS" title="22TOTS" data-diff="0,0,-2,-6,-6,-6,3,-3,-1,-2,-6,-5,-5,-4,-7,-4,-7,-6,-4,-1,-14,-4,-5,-9,-1,-3,-4,11,5,-9,-4,6,-4,-2,-2,-1,-5,-3,-3,-3,-7,-3"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22TOTS.png" alt="22TOTS"> <span class="diff minus">-5</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(273165153);"> 
+     <input type="radio" id="season_WC22" name="radioVS" class="season_check season_WC22" disabled> <label class="_season_vs_label" for="season_WC22" alt="WC22" title="WC22" data-diff="0,0,-5,-7,-8,-7,3,-4,-4,-5,-7,-6,-7,-5,-9,-11,-8,-8,-7,-3,-15,-7,-6,-10,-2,-5,-5,9,3,-4,-5,5,-5,-4,-3,-4,-7,-3,-3,-8,-8,-2"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/WC22.png" alt="WC22"> <span class="diff minus">-6</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(274165153);"> 
+     <input type="radio" id="season_RMCF" name="radioVS" class="season_check season_RMCF" disabled> <label class="_season_vs_label" for="season_RMCF" alt="RMCF" title="RMCF" data-diff="0,0,-4,-6,-7,-7,4,-4,-3,-4,-7,-6,-3,-6,-8,-3,-8,-7,-6,0,-13,-5,-6,-10,-2,-4,-5,12,4,-4,-3,5,-5,-3,-1,-2,-6,-3,-2,-5,-6,-4"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/RMCF.png" alt="RMCF"> <span class="diff minus">-6</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(278165153);"> 
+     <input type="radio" id="season_23TOTY" name="radioVS" class="season_check season_23TOTY" checked disabled> <label class="_season_vs_label" for="season_23TOTY" alt="23TOTY" title="23TOTY" data-diff="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23TOTY.png" alt="23TOTY"> <span class="diff plus">0</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(280165153);"> 
+     <input type="radio" id="season_22UCL" name="radioVS" class="season_check season_22UCL" disabled> <label class="_season_vs_label" for="season_22UCL" alt="22UCL" title="22UCL" data-diff="0,0,-2,-10,-9,-8,2,-4,-2,-2,-13,-6,-8,-6,-10,-10,-7,-8,-12,-6,-16,-9,-7,-13,-3,-5,-5,2,9,0,-15,4,-5,0,-5,-8,-6,5,6,-3,-3,-4"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22UCL.png" alt="22UCL"> <span class="diff minus">-8</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(300165153);"> 
+     <input type="radio" id="season_LIVE" name="radioVS" class="season_check season_LIVE" disabled> <label class="_season_vs_label" for="season_LIVE" alt="LIVE" title="LIVE" data-diff="0,0,-32,-34,-33,-34,-22,-33,-31,-32,-34,-31,-34,-30,-33,-37,-32,-31,-29,-36,-41,-38,-33,-35,-32,-45,-24,-16,-24,-24,-30,-23,-34,-30,-33,-32,-33,-3,-3,-12,-12,-12"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/LIVE.png" alt="LIVE"> <span class="diff minus">-31</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(500165153);"> 
+     <input type="radio" id="season_PLC" name="radioVS" class="season_check season_PLC" disabled> <label class="_season_vs_label" for="season_PLC" alt="PLC" title="PLC" data-diff="0,0,-30,-37,-34,-34,-24,-30,-30,-30,-41,-31,-34,-31,-37,-34,-34,-31,-24,-50,-36,-35,-33,-35,-29,-50,-27,-8,-27,-34,-36,-24,-30,-33,-27,-35,-38,2,2,-7,-7,-7"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/PLC.png" alt="PLC"> <span class="diff minus">-33</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(501165153);"> 
+     <input type="radio" id="season_18PLS" name="radioVS" class="season_check season_18PLS" disabled> <label class="_season_vs_label" for="season_18PLS" alt="18PLS" title="18PLS" data-diff="0,0,-30,-35,-32,-31,-19,-29,-30,-28,-38,-31,-33,-30,-34,-34,-33,-30,-24,-36,-36,-33,-30,-31,-28,-44,-25,-8,-19,-29,-34,-18,-30,-27,-27,-33,-33,2,2,-7,-7,-7"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18PLS.png" alt="18PLS"> <span class="diff minus">-31</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(502165153);"> 
+     <input type="radio" id="season_19PLA" name="radioVS" class="season_check season_19PLA" disabled> <label class="_season_vs_label" for="season_19PLA" alt="19PLA" title="19PLA" data-diff="0,0,-26,-29,-25,-25,-12,-24,-27,-23,-31,-26,-28,-23,-28,-29,-26,-24,-19,-29,-31,-28,-24,-25,-22,-38,-20,-3,-14,-14,-27,-13,-25,-22,-22,-24,-26,7,7,-2,-2,-2"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19PLA.png" alt="19PLA"> <span class="diff minus">-25</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(503165153);"> 
+     <input type="radio" id="season_19PLS" name="radioVS" class="season_check season_19PLS" disabled> <label class="_season_vs_label" for="season_19PLS" alt="19PLS" title="19PLS" data-diff="0,0,-27,-29,-26,-26,-13,-25,-28,-24,-30,-26,-27,-23,-28,-28,-27,-25,-20,-30,-32,-29,-25,-26,-23,-39,-18,-4,-15,-15,-25,-14,-26,-23,-24,-23,-26,6,6,-3,-3,-3"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19PLS.png" alt="19PLS"> <span class="diff minus">-25</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(506165153);"> 
+     <input type="radio" id="season_20PLA" name="radioVS" class="season_check season_20PLA" disabled> <label class="_season_vs_label" for="season_20PLA" alt="20PLA" title="20PLA" data-diff="0,0,-24,-23,-22,-21,-8,-21,-25,-21,-24,-21,-22,-18,-22,-24,-22,-20,-16,-26,-28,-25,-20,-22,-18,-35,-12,0,-11,-11,-17,-10,-22,-20,-20,-19,-20,10,10,1,1,1"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20PLA.png" alt="20PLA"> <span class="diff minus">-20</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(508165153);"> 
+     <input type="radio" id="season_21PLA" name="radioVS" class="season_check season_21PLA" disabled> <label class="_season_vs_label" for="season_21PLA" alt="21PLA" title="21PLA" data-diff="0,0,-23,-22,-22,-21,-9,-21,-23,-21,-22,-20,-22,-18,-22,-24,-22,-20,-16,-26,-28,-25,-20,-22,-18,-32,-12,-3,-11,-11,-18,-10,-21,-20,-20,-19,-20,10,10,1,1,1"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21PLA.png" alt="21PLA"> <span class="diff minus">-19</span> </label> 
+    </div> 
+    <div class="season" onclick="DataCenter.GetPlayerCompareForDetail(511165153);"> 
+     <input type="radio" id="season_22PLA" name="radioVS" class="season_check season_22PLA" disabled> <label class="_season_vs_label" for="season_22PLA" alt="22PLA" title="22PLA" data-diff="0,0,-17,-19,-18,-19,-7,-18,-16,-17,-19,-16,-19,-15,-18,-22,-17,-16,-14,-21,-26,-23,-18,-20,-17,-30,-9,-1,-9,-9,-15,-8,-19,-15,-18,-17,-18,12,12,3,3,3"> <img src="https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22PLA.png" alt="22PLA"> <span class="diff minus">-16</span> </label> 
+    </div> 
+   </div> 
+  </div> 
+  <ul> 
+   <li class="ab"> 
+    <div class="txt">
+     스피드
+    </div> 
+    <div class="value over100">
+      104<span class="diff"></span> 
+    </div> </li> 
+   <li class="ab"> 
+    <div class="txt">
+     슛
+    </div> 
+    <div class="value over110">
+     113 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab"> 
+    <div class="txt">
+     패스
+    </div> 
+    <div class="value over100">
+     108 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab"> 
+    <div class="txt">
+     드리블
+    </div> 
+    <div class="value over110">
+     112 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab"> 
+    <div class="txt">
+     수비
+    </div> 
+    <div class="value over50">
+     58 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab"> 
+    <div class="txt">
+     피지컬
+    </div> 
+    <div class="value over100">
+     103 <span class="diff"></span>
+    </div> </li> 
+  </ul> 
+ </div> 
+ <div class="content_bottom"> 
+  <div class="position_tabs"> 
+   <ul> 
+    <li class="active"><a href="javascript:;" onclick="fn_PositionTabChagePlayerInfo(this, 99);">총 능력치</a></li> 
+    <li><a href="javascript:;" onclick="fn_PositionTabChagePlayerInfo(this, 21);">CF</a></li> 
+    <li><a href="javascript:;" onclick="fn_PositionTabChagePlayerInfo(this, 25);">ST</a></li> 
+   </ul> 
+  </div> 
+  <ul class="data_wrap data_wrap_playerinfo"> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,12,16,17,18,19,20,21,22,23,24,25,26,27,"> 
+    <div class="txt">
+     속력
+    </div> 
+    <div class="value over100">
+     104 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",2,3,7,8,12,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     가속력
+    </div> 
+    <div class="value over100">
+     104 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     골 결정력
+    </div> 
+    <div class="value over110">
+     117 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",20,21,22,24,25,26,)"> 
+    <div class="txt">
+     슛 파워
+    </div> 
+    <div class="value over110">
+     110 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",13,14,15,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     중거리 슛
+    </div> 
+    <div class="value over100">
+     107 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     위치 선정
+    </div> 
+    <div class="value over110">
+     113 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",24,25,26,)"> 
+    <div class="txt">
+     발리슛
+    </div> 
+    <div class="value over110">
+     113 <span class="diff"></span>
+    </div> </li> 
+  </ul> 
+  <ul class="data_wrap"> 
+   <li class="ab" data-positon=")"> 
+    <div class="txt">
+     페널티 킥
+    </div> 
+    <div class="value over110">
+     113 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     짧은 패스
+    </div> 
+    <div class="value over110">
+     113 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,27,)"> 
+    <div class="txt">
+     시야
+    </div> 
+    <div class="value over110">
+     112 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",2,3,7,8,12,16,23,27,)"> 
+    <div class="txt">
+     크로스
+    </div> 
+    <div class="value over90">
+     97 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",9,10,11,12,13,14,15,16,17,18,19,)"> 
+    <div class="txt">
+     긴 패스
+    </div> 
+    <div class="value over100">
+     105 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=")"> 
+    <div class="txt">
+     프리킥
+    </div> 
+    <div class="value over100">
+     107 <span class="diff"></span>
+    </div> </li> <!-- 12 --> 
+   <li class="ab" data-positon=")"> 
+    <div class="txt">
+     커브
+    </div> 
+    <div class="value over110">
+     112 <span class="diff"></span>
+    </div> </li> 
+  </ul> 
+  <ul class="data_wrap"> 
+   <li class="ab" data-positon=",2,8,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     드리블
+    </div> 
+    <div class="value over110">
+     112 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     볼 컨트롤
+    </div> 
+    <div class="value over110">
+     117 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",17,18,19,23,27,)"> 
+    <div class="txt">
+     민첩성
+    </div> 
+    <div class="value over100">
+     103 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=")"> 
+    <div class="txt">
+     밸런스
+    </div> 
+    <div class="value over110">
+     111 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,)"> 
+    <div class="txt">
+     반응 속도
+    </div> 
+    <div class="value over100">
+     107 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,9,10,11,)"> 
+    <div class="txt">
+     대인 수비
+    </div> 
+    <div class="value over50">
+     56 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,9,10,11,13,14,15,)"> 
+    <div class="txt">
+     태클
+    </div> 
+    <div class="value over40">
+     47 <span class="diff"></span>
+    </div> </li> 
+  </ul> 
+  <ul class="data_wrap"> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,9,10,11,13,14,15,)"> 
+    <div class="txt">
+     가로채기
+    </div> 
+    <div class="value over60">
+     60 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,3,4,5,6,7,20,21,22,24,25,26,)"> 
+    <div class="txt">
+     헤더
+    </div> 
+    <div class="value over110">
+     112 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,2,3,4,5,6,7,8,9,10,11,)"> 
+    <div class="txt">
+     슬라이딩 태클
+    </div> 
+    <div class="value over40">
+     41 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,4,5,6,9,10,11,24,25,26,)"> 
+    <div class="txt">
+     몸싸움
+    </div> 
+    <div class="value over100">
+     108 <span class="diff"></span>
+    </div> </li> <!-- 24 --> 
+   <li class="ab" data-positon=",2,3,7,8,9,10,11,12,13,14,15,16,)"> 
+    <div class="txt">
+     스태미너
+    </div> 
+    <div class="value over100">
+     104 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,4,5,6,9,10,11,)"> 
+    <div class="txt">
+     적극성
+    </div> 
+    <div class="value over90">
+     91 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",1,4,5,6,)"> 
+    <div class="txt">
+     점프
+    </div> 
+    <div class="value over100">
+     104 <span class="diff"></span>
+    </div> </li> 
+  </ul> 
+  <ul class="data_wrap"> 
+   <li class="ab" data-positon=")"> 
+    <div class="txt">
+     침착성
+    </div> 
+    <div class="value over110">
+     115 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",0,)"> 
+    <div class="txt">
+     GK 다이빙
+    </div> 
+    <div class="value over10">
+     16 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",0,)"> 
+    <div class="txt">
+     GK 핸들링
+    </div> 
+    <div class="value over10">
+     14 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",0,)"> 
+    <div class="txt">
+     GK 킥
+    </div> 
+    <div class="value over10">
+     18 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",0,)"> 
+    <div class="txt">
+     GK 반응속도
+    </div> 
+    <div class="value over20">
+     20 <span class="diff"></span>
+    </div> </li> 
+   <li class="ab" data-positon=",0,)"> 
+    <div class="txt">
+     GK 위치 선정
+    </div> 
+    <div class="value over10">
+     18 <span class="diff"></span>
+    </div> </li> <!-- 34 --> 
+  </ul> 
+ </div> 
+</div>
+

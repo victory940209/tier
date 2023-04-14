@@ -9,8 +9,8 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.victory</groupId>
-	<artifactId>fifaSpid</artifactId>
-	<name>fifaSpid</name>
+	<artifactId>fifaDataSet</artifactId>
+	<name>fifaDataSet</name>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -78,9 +78,18 @@
 			<artifactId>commons-text</artifactId>
 			<version>1.8</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.14.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
-		<finalName>fifaSpid</finalName>
+		<finalName>fifaDataSet</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
