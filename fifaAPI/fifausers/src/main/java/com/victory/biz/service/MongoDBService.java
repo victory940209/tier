@@ -18,8 +18,6 @@ public class MongoDBService {
 
 	public DivisionVo selectDivisionId(int id) {
 
-
-
 		DivisionVo divisionVo = userMongoDBRepository.findByDivisionId(id);
 
 		log.info("divisionVo : " + divisionVo);
