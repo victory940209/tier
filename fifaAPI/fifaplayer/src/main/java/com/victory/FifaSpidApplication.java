@@ -6,6 +6,7 @@ import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
+@PropertySource(value = {"classpath:/properties/server-${spring.profiles.active}.properties"})
 public class FifaSpidApplication {
 
 	public static void main(String[] args) {

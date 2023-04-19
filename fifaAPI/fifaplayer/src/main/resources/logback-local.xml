@@ -38,4 +38,10 @@
 		<appender-ref ref="log_file" />
 	</logger>
 
+	<logger name="jdbc.sqlonly" level="INFO" />
+	<logger name="jdbc.sqltiming" level="ERROR" />
+	<logger name="jdbc.audit" level="ERROR" />
+	<logger name="jdbc.resultset" level="ERROR" />
+	<logger name="jdbc.resultsettable" level="ERROR" />
+	<logger name="jdbc.connection" level="ERROR" />
 </configuration>

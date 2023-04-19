@@ -1,11 +1,11 @@
 server:
-  port: 9030
+  port: 9000
 
 spring:
   application:
-    name: fifaspid
+    name: fifausers
   pid:
-    file: /data1/api/fifaspid.pid
+    file: /data1/api/fifausers.pid
   data:
     mongodb:
       host: ec2-13-209-40-73.ap-northeast-2.compute.amazonaws.com
@@ -14,7 +14,13 @@ spring:
       authentication-database: admin 
       username: admin
       password: dkssud13
-      
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:postgresql://192.168.0.102:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: foresys#@1      
 logging:
   config: classpath:logback-local.xml
   
