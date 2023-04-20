@@ -1,0 +1,30 @@
+<tr data-code="4008204" data-tcolor2type="11" data-tcolor2level="4"> 
+    <td class="sup_info team_info clearfix"> 
+     <div class="fifa4 info clearfix"> 
+      <div class="fifa4 img_area"> <a href="./?code=4008204"> <img src="//static.inven.co.kr/image_2011/site_image/fifaonline4/tcolor2icon/tc4_40082.png?v=221215b" alt="" class="icon"> <img src="//static.inven.co.kr/image_2011/fifaonline4/dataninfo/tcolor2bglevel_4.png?v=3" class="frame"> </a> 
+      </div> 
+      <div class="fifa4 text_area"> <a href="./?code=4008204" class="name"> [4단계] 1. FC 우니온 베를린 </a> 
+      </div> 
+     </div> </td> 
+    <td class="text_center"> <p>전체 능력치 +4</p> <p>크로스 +3</p> <p>점프 +3</p> </td> 
+   </tr>
+   ---------------------------------------------
+   <div class="teamcolor_item"> 
+    <div class="players_utils"> <a href="#" class="btn_detail_link" onclick="DataCenter.GetTeamColorDetail(40082); return false;"></a> 
+    </div> 
+    <div class="crests lv4"> 
+     <img src="https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/crests/light/medium/l1831.png" alt="rank0"> 
+     <div class="num">
+      11
+     </div> 
+    </div> 
+    <div class="name">
+     1. FC 우니온 베를린
+    </div> 
+    <div class="level">
+     4단계
+    </div> 
+    <div class="desc"> <span class="item">전체 능력치 +4</span> <span class="item">크로스 +3</span> <span class="item">점프 +3</span> 
+    </div> 
+   </div>
+   

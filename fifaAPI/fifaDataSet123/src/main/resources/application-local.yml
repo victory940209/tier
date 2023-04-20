@@ -1,0 +1,26 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: fifaDataSet
+  pid:
+    file: /data1/api/fifaDataSet.pid
+  data:
+    mongodb:
+      host: ec2-13-209-40-73.ap-northeast-2.compute.amazonaws.com
+      port: 27017
+      database: DB_TIER_FIFA
+      authentication-database: admin 
+      username: admin
+      password: dkssud13
+      
+logging:
+  config: classpath:logback-local.xml
+  
+springdoc:
+  swagger-ui:
+    path: /doc/swagger
+    operations-sorter: method
+
+
