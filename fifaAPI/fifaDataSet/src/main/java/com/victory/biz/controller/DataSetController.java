@@ -24,11 +24,20 @@ public class DataSetController {
 	CrawlingService crawlingService;
 
 
-	@PostMapping(value = "/getCrawling")
+	@PostMapping(value = "/getPlayerCrawling")
 	public ResultVo getCrawling(String url){
 
-		crawlingService.getCrawling(url);
+		crawlingService.getPlayerCrawling(url);
 
 		return ResultVo.builder().result("tete").resultMsg("성공").build();
 	}
+
+	@PostMapping(value = "/getTeamcolorCrawling")
+	public ResultVo getTeamcolorCrawling(String url){
+
+		crawlingService.setTeamcolorCrawling(url);
+
+		return ResultVo.builder().result("tete").resultMsg("성공").build();
+	}
+	
 }

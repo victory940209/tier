@@ -1,5 +1,7 @@
 package com.victory.biz.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.jsonschema.JsonSerializableSchema;
 
@@ -11,9 +13,10 @@ import lombok.Data;
 @Data
 @Schema
 @JsonSerializableSchema
+@Document(collection = "spid")
 public class SpidVo {
 
-	private String id;
+	private int key;
 
 	private String name;
 }

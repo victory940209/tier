@@ -27,12 +27,6 @@ import reactor.core.publisher.Mono;
 @Component
 public class HttpUrlConnectUtil {
 
-	@Value("${fifaAuthKey}")
-	private String fifaAuthKey;
-
-	@Value("${fifaServer}")
-	private String fifaServer;
-
 	@Autowired
 	RestTemplate restTemplate;
 
@@ -49,10 +43,7 @@ public class HttpUrlConnectUtil {
 		HttpHeaders reqheader = setHeader(header);
 		HttpEntity<T> entity = new HttpEntity<>(obj, reqheader);
 
-		log.info("fifaAuthKey : " + fifaAuthKey);
-		log.info("fifaServer : " + fifaServer);
-
-		ResponseEntity<K> respEntity = restTemplate.getForEntity(fifaServer + url, cls, entity);
+		ResponseEntity<K> respEntity = restTemplate.getForEntity(url, cls, entity);
 
 		return respEntity.getBody();
 
@@ -163,7 +154,6 @@ public class HttpUrlConnectUtil {
 	public HttpHeaders setHeader(Map<String, Object> headers){
 
 		HttpHeaders header = new HttpHeaders();
-		header.set("Authorization", fifaAuthKey);
 		if(headers != null) {
 			for (Entry<String, Object> elem : headers.entrySet()) {
 				if (!"".equals(elem.getValue()) && elem.getValue() != null){
@@ -174,13 +164,7 @@ public class HttpUrlConnectUtil {
 		return header;
 	}
 
-	public WebClient createWebClient(){
-		return WebClient.builder()
-				.baseUrl(fifaServer)
-				.defaultHeader("Authorization", fifaAuthKey)
-				.codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(5 * 1024 * 1024))
-				.build();
-	}
+
 
 
 }
