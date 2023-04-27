@@ -2,6 +2,7 @@ package com.victory.biz.model;
 
 import java.util.List;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.databind.jsonschema.JsonSerializableSchema;
@@ -22,7 +23,8 @@ import lombok.NoArgsConstructor;
 public class PlayerVo {
 
 	// spid
-	private String key;
+	@Id
+	private String id;
 	// 이름
 	private String name;
 	// 시즌
@@ -135,5 +137,7 @@ public class PlayerVo {
 	private List<String> clubYear;
 	// 클럽이름
 	private List<String> clubName;
+	// 클럽이름
+	private List<TeamcolorVo> teamColor;
 
 }

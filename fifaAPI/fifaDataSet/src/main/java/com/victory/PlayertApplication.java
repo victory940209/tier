@@ -22,7 +22,7 @@ public class PlayertApplication {
 			Document doc = Jsoup.connect("https://fifaonline4.nexon.com/DataCenter/PlayerInfo?spid=101000240&n1Strong=1").get();
 
 			PlayerVo playerVo = new PlayerVo();
-			playerVo.setKey("101190043");
+			playerVo.setId("101190043");
 			playerVo.setName(doc.select("div.name").get(0).text());
 			playerVo.setSeason(doc.select("div.season_match").select(".season").select("[checked]").attr("id"));
 			playerVo.setPaySide(changeString(doc.select("div.pay_side").text()));

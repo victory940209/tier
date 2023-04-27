@@ -20,7 +20,11 @@ import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.Predicate;
 import com.victory.biz.model.PlayerVo;
+import com.victory.biz.model.QPlayerVo;
+import com.victory.biz.model.QTeamcolorVo;
 import com.victory.biz.model.SpidVo;
 import com.victory.biz.model.TeamcolorVo;
 import com.victory.system.util.HttpUrlConnectUtil;
@@ -37,7 +41,7 @@ public class CrawlingService {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	public void getPlayerCrawling(String id) {
+	public void setPlayerCrawling(String id) {
 
 		List<SpidVo> list = mongoDBService.selectSpidAll();
 		int count = 1;
@@ -52,7 +56,7 @@ public class CrawlingService {
 						.get();
 				PlayerVo playerVo = new PlayerVo();
 
-				playerVo.setKey(spidVo.getKey() + "");
+				playerVo.setId(spidVo.getKey() + "");
 				playerVo.setName(doc.select("div.name").get(0).text());
 				playerVo.setSeason(doc.select("div.season_match").select(".season").select("[checked]").attr("id"));
 				playerVo.setPaySide(Integer.valueOf(doc.select("div.pay_side").text()));
@@ -211,6 +215,9 @@ public class CrawlingService {
 				playerVo.setClubYear(clubYear);
 				playerVo.setClubName(clubName);
 
+
+				playerVo = setTeamColor(playerVo);
+
 				mongoDBService.insertPlayer(playerVo);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -227,8 +234,8 @@ public class CrawlingService {
 			Elements data = doc.select("div.board_teamcolor").select(".table").select("tbody").select("tr");
 			int Count = 1;
 			for (Element param : data) {
-				
-				
+
+
 				TeamcolorVo teamcolorVo = new TeamcolorVo();
 				// key
 				teamcolorVo.setKey(param.attr("data-code").substring(0, param.attr("data-code").length() - 2));
@@ -237,11 +244,11 @@ public class CrawlingService {
 				// 이름
 				String name = param.select(".name").text();
 				teamcolorVo.setName(name.substring(6, name.length()));
-				
+
 				Document lv = Jsoup
 						.connect("https://fifaonline4.inven.co.kr/dataninfo/teamcolor2/?code=" + param.attr("data-code"))
 						.get();
-		
+
 				String level = lv.select(".dniAdShow").select(".count").text();
 				// 레벨
 
@@ -279,7 +286,7 @@ public class CrawlingService {
 				log.info("level : " + teamcolorVo.getLevel());
 				log.info("Personnel : " + teamcolorVo.getPersonnel());
 				log.info("count : " + Count++);
-				
+
 				mongoDBService.insertTeamcolor(teamcolorVo);
 			}
 
@@ -287,6 +294,22 @@ public class CrawlingService {
 			e.printStackTrace();
 		}
 
+	}
+
+	public PlayerVo setTeamColor(PlayerVo playerVo) {
+
+		QTeamcolorVo qTeamcolorVo = QTeamcolorVo.teamcolorVo;
+		BooleanBuilder builder = new BooleanBuilder();
+
+		builder.and(qTeamcolorVo.spid.contains(playerVo.getId()));
+
+		Predicate predicate = builder.getValue();
+
+		List<TeamcolorVo> list = mongoDBService.selTeamcolorPlayer(predicate);
+
+		playerVo.setTeamColor(list);
+
+		return playerVo;
 	}
 
 	public Map<String, String> getMap(String teamcolorkey) {
@@ -432,7 +455,7 @@ public class CrawlingService {
 				teamcolorVo.setDetailStat33(i);
 				break;
 			case "GK 위치 선정":
-				teamcolorVo.setDetailStat33(34);
+				teamcolorVo.setDetailStat34(i);
 				break;
 			default:
 				break;

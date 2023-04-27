@@ -18,25 +18,51 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonSerializableSchema
-@Document(collection = "teamcolor")
-public class TeamcolorVo {
+@Document(collection = "player")
+public class PlayerVo {
 
-	// key
+	// spid
 	private String key;
-	// 클럽 club, 국가 nation, 스페셜 special, 관계 relation, 강화 grade
-	private String type;
-	// 팀컬러 이름
+	// 이름
 	private String name;
-	// 인원
-	private String personnel;
-	// 팀컬러 레벨
-	private String level;
-	// image 파일 이름
-	private String image;
-	// 팀컬러 적용 spid
-	private List<String> spid;
-	// 속력
-	private int detailStatAll;
+	// 시즌
+	private String season;
+	// 급여
+	private int paySide;
+	// 주포지션
+	private int ovr;
+	// 주포지션
+	private List<String> mainPosition;
+	// 주포지션 스탯
+	private List<Integer> mainPositionValue;
+	// 나이
+	private String birth;
+	// 키
+	private int height;
+	// 몸무게
+	private int weight;
+	// 피지컬
+	private String physical;
+	// 개인기
+	private String skill;
+	// 발
+	private int lFoot;
+	// 발
+	private int rFoot;
+	// 명성
+	private String fame;
+	// 국가
+	private String nation;
+	// 특성
+	private List<String> traits;
+	// 포지션명
+	private List<String> positionName;
+	// 포지션스탯
+	private List<Integer> positionValue;
+	// 메인 스탯명
+	private List<String> mainStatName;
+	// 메인 스탯값
+	private List<Integer> mainStatValue;
 	// 속력
 	private int detailStat1;
 	// 가속력
@@ -105,5 +131,9 @@ public class TeamcolorVo {
 	private int detailStat33;
 	// GK 위치 선정
 	private int detailStat34;
+	// 클럽년도
+	private List<String> clubYear;
+	// 클럽이름
+	private List<String> clubName;
 
 }

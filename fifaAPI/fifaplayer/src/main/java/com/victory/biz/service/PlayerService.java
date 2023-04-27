@@ -12,7 +12,6 @@ import com.google.gson.Gson;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
-import com.querydsl.jpa.impl.JPAUpdateClause;
 import com.victory.biz.model.PlayerVo;
 import com.victory.biz.model.QPlayerVo;
 import com.victory.biz.model.SearchPlayerVo;
@@ -263,16 +262,16 @@ public class PlayerService {
 		// 클럽이름
 		if (!SearchplayerVo.getClubName().isEmpty() && !SearchplayerVo.getClubName().get(0).equals(""))
 			builder.and(qplayerVo.clubName.any().in(SearchplayerVo.getClubName()));
-		
+
 		Sort sort = Sort.by("ovr").descending();
 		Predicate predicate = builder.getValue();
 		PageRequest pageRequest = PageRequest.of(pageNumber, pageSize, sort);
-		
+
 		Page<PlayerVo> page = playerMongoDBRepository.findAll(predicate, pageRequest);
 		List<PlayerVo> result = page.getContent();
-		
-		
-		
+
+
+
 		Gson gson = new Gson();
 		String listJson = gson.toJson(result, List.class).toString();
 		log.info("########## result : " + listJson);
