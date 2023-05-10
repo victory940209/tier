@@ -7,11 +7,11 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @PropertySource(value = {"classpath:/properties/server-${spring.profiles.active}.properties"})
-public class FifaSpidApplication {
+public class FifaPlayerApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication api = new SpringApplication(FifaSpidApplication.class);
+		SpringApplication api = new SpringApplication(FifaPlayerApplication.class);
 		api.addListeners(new ApplicationPidFileWriter());
 		api.run(args);
 

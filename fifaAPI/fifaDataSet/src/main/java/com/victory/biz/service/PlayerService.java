@@ -34,8 +34,6 @@ public class PlayerService {
 	@Autowired
 	private MongoDBService mongoDBService;
 
-	@Autowired
-	private RestTemplate restTemplate;
 
 	public void setPlayerTeamcolor(String id) {
 		List<TeamcolorVo> data = mongoDBService.selTeamcolorAll();
