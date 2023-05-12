@@ -23,45 +23,42 @@ import com.google.gson.Gson;
 import com.victory.biz.model.PlayerVo;
 import com.victory.biz.model.SpidVo;
 import com.victory.biz.model.TeamcolorVo;
+import com.victory.biz.model.TraitVo;
 import com.victory.system.util.HttpUrlConnectUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
-public class PlayerService {
+public class CrawolingTService {
 
 	@Autowired
 	private MongoDBService mongoDBService;
 
+	public void setTraitCrawling() {
 
-	public void setPlayerTeamcolor(String id) {
-		List<TeamcolorVo> data = mongoDBService.selTeamcolorAll();
+		try {
 
-		int count = 1;
+			Document doc = Jsoup
+					.connect("https://fifaonline4.nexon.com/datacenter").get();
 
-		for(TeamcolorVo teamcolorVo :data) {
+			Element fdata = doc.select("div.search_po_ab").select(".ability_list").get(0);
+			Elements data = fdata.select(".selector_item");
+			int i=0;
+			for (Element param : data) {
+				if(i++ != 0) {
+					TraitVo traitVo = new TraitVo();
+					traitVo.setName(param.text());
+					log.info("Element : " + param.text());
 
-			List<String> listkey = teamcolorVo.getSpid();
-
-			for(String key:listkey){
-				PlayerVo playerVo =  mongoDBService.selPlayer(key);
-
-				mongoDBService.savePlayer(playerVo);
+					mongoDBService.insertTrait(traitVo);
+				}
 
 			}
-			log.info("key : " +  teamcolorVo.getKey());
-			log.info("name : " +  teamcolorVo.getName());
-			log.info("count : " +  count++);
+
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-
-
-	}
-
-
-	public void setTraitCrawling() {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

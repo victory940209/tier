@@ -1,25 +1,26 @@
 package com.victory.biz.model;
 
-import java.util.List;
+import javax.validation.Valid;
 
+import org.springframework.boot.context.properties.bind.DefaultValue;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.jsonschema.JsonSerializableSchema;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Builder.Default;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Builder
+
 @Data
 @Schema
-@AllArgsConstructor
-@NoArgsConstructor
-@JsonSerializableSchema
-@Document(collection = "teamcolor")
-public class TeamcolorVo {
+public class SearchTeamcolorVo {
 
 	// key
 	private String key;
@@ -27,14 +28,7 @@ public class TeamcolorVo {
 	private String type;
 	// 팀컬러 이름
 	private String name;
-	// 인원
-	private String personnel;
-	// 팀컬러 레벨
-	private String level;
-	// image 파일 이름
-	private String image;
-	// 팀컬러 적용 spid
-	private List<String> spid;
-
+	// 팀컬러 이름
+	private Boolean distinct;
 
 }

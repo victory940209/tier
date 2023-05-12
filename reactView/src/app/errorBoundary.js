@@ -15,16 +15,7 @@ class ErrorBoundary extends Component {
         let errorLocation = errorInfo.componentStack.toString().split('(')[0].replace('\n', '').replace('   at ', '')
         if(window.location.host.includes('localhost')) {
             // 로컬이 아닐 경우 에러 수집을 위해 전송
-            fetch(
-                "/api/error/insert",
-                {
-                    method: 'POST',
-                    headers: {
-						"Content-type" : "application/json",
-					},
-                    body: JSON.stringify({'location' : errorLocation, 'errorText' : error.message})
-                }
-            );
+           
 		} else {
 			console.log("errorLocaton : " + errorLocation);
 			console.log("errorMsg : " + error.message);

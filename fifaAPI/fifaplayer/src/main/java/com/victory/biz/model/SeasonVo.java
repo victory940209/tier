@@ -2,22 +2,20 @@ package com.victory.biz.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.jsonschema.JsonSerializableSchema;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Builder
 @Data
 @Schema
 @JsonSerializableSchema
-@Document(collection = "spid")
-public class SpidVo {
+@NoArgsConstructor
+@Document(collection = "seasonid")
+public class SeasonVo {
 
-	
-	private int key;
-
-	private String name;
+	int seasonId;
+	String className;
+	String seasonImg;
 }

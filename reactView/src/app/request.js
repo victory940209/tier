@@ -299,26 +299,22 @@ export default function useReq() {
 		}
 		
 		let isSuccess = true;
-        
+
 		return fetch(
 			url,
 			{
 				method: 'POST',
 				headers: {
-					"Content-type" : "application/json",
-					"X-AUTH-ATOKEN" : getAToken(),
-					"X-AUTH-RTOKEN" : getRToken()
+
+					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify(params)
+				body: 
+
+				JSON.stringify(params)
+				,
 			}
 		).then((res) => {
-			if(res.headers.get("X-AUTH-ATOKEN")) {
-				setAToken(res.headers.get("X-AUTH-ATOKEN"));
-			}
 			
-			if(!res.ok) {
-				isSuccess = false;
-			}
 			
 			if(res.headers.get("content-type") === 'application/json') {
 				return res.json();
@@ -327,9 +323,6 @@ export default function useReq() {
 			}
 		}).then(data => {
 			if(isSuccess) {
-				// 세션 시간 초기화
-				setSessionTime();
-				setSessionCheck();
 				successF(data);
 			} else {
 				if(!url.includes('login')) {

@@ -8,14 +8,15 @@ import org.springframework.stereotype.Component;
 
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
-import com.querydsl.core.BooleanBuilder;
 import com.victory.biz.model.PlayerVo;
 import com.victory.biz.model.QPlayerVo;
 import com.victory.biz.model.SpidVo;
 import com.victory.biz.model.TeamcolorVo;
+import com.victory.biz.model.TraitVo;
 import com.victory.biz.repository.PlayerMongoDBRepository;
 import com.victory.biz.repository.SpidMongoDBRepository;
 import com.victory.biz.repository.TeamcolorMongoDBRepository;
+import com.victory.biz.repository.TraitMongoDBRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -31,6 +32,9 @@ public class MongoDBService {
 
 	@Autowired
 	TeamcolorMongoDBRepository teamcolorMongoDBRepository;
+
+	@Autowired
+	TraitMongoDBRepository traitMongoDBRepository;
 
 	public List<SpidVo> selectSpidAll() {
 
@@ -102,4 +106,11 @@ public class MongoDBService {
 		teamcolorMongoDBRepository.save(optionalTeamcolorVo);
 
 	}
+	public void insertTrait(TraitVo traitVo) {
+
+		traitMongoDBRepository.insert(traitVo);
+
+	}
+
+
 }

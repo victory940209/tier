@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.victory.biz.model.PlayerVo;
 import com.victory.biz.model.ResultVo;
 import com.victory.biz.service.CrawlingService;
+import com.victory.biz.service.CrawolingTService;
 import com.victory.biz.service.PlayerService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -25,6 +25,8 @@ public class DataSetController {
 	@Autowired
 	PlayerService playerService;
 
+	@Autowired
+	CrawolingTService crawolingTService;
 
 	@PostMapping(value = "/test")
 	public ResultVo test(@RequestBody Map<String, String> param){
@@ -64,5 +66,14 @@ public class DataSetController {
 		return ResultVo.builder().result("tete").resultMsg("성공").build();
 	}
 
+	@PostMapping(value = "/setTraitCrawling")
+	// -- swagger 설정 -- swagger-ui에서 나오는 설명.
+	@Operation(summary = "trait insert", description = "특성 추가")
+	public ResultVo setTraitCrawling(){
+
+		crawolingTService.setTraitCrawling();
+
+		return ResultVo.builder().result("tete").resultMsg("성공").build();
+	}
 
 }

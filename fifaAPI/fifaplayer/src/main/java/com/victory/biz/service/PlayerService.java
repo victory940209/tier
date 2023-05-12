@@ -26,7 +26,6 @@ public class PlayerService {
 	@Autowired
 	private PlayerRepository playerMongoDBRepository;
 
-	@SuppressWarnings("unchecked")
 	public List<PlayerVo> searchPlayer(SearchPlayerVo SearchplayerVo) {
 
 		QPlayerVo qplayerVo = QPlayerVo.playerVo;
