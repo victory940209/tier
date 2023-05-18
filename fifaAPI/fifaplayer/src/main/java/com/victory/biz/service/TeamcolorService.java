@@ -68,6 +68,8 @@ public class TeamcolorService {
 
 		Gson gson = new Gson();
 		String listJson = gson.toJson(result, List.class).toString();
+		log.info("list size : " + result.size());
+		log.info("list : " + listJson);
 
 		if(searchTeamcolorVo.getDistinct() != null && searchTeamcolorVo.getDistinct()) {
 			Set<Object> distinctValues = new HashSet<>();

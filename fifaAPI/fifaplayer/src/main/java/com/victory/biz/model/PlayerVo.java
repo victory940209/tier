@@ -139,5 +139,7 @@ public class PlayerVo {
 	private List<String> clubName;
 	// 클럽이름
 	private List<TeamcolorVo> teamColor;
+	// 가격
+	private int pay;
 
 }

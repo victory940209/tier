@@ -1,15 +1,20 @@
 package com.victory.biz.controller;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.victory.biz.model.PlayerVo;
 import com.victory.biz.model.ResultVo;
 import com.victory.biz.model.SearchPlayerVo;
 import com.victory.biz.model.TeamcolorVo;
 import com.victory.biz.service.PlayerService;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -20,11 +25,9 @@ public class playerController {
 	PlayerService playerService;
 
 	@PostMapping(value = "/getPlayer")
-	public ResultVo getPlayer(@RequestBody SearchPlayerVo searchPlayerVo){
+	public Map<String, Object> getPlayer(@RequestBody SearchPlayerVo searchPlayerVo){
 
-		log.info("playerController : " + playerService.searchPlayer(searchPlayerVo));
-
-		return ResultVo.builder().result("tete").resultMsg("성공").build();
+		return playerService.searchPlayer(searchPlayerVo);
 	}
 
 }
