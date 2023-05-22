@@ -59,9 +59,5 @@ public class PlayerService {
 	}
 
 
-	public void setTraitCrawling() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

@@ -486,14 +486,14 @@ export default function TableSample() {
     });
   }
 
-  const setImage = (e) =>{
+  const setImage = (sdata) =>{
     // 액션 이미지
-    let aurl = "https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p" + e.row.id +".png";
+    let aurl = "https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p" + sdata.row.id +".png";
    
     
     // 시즌 이미지
     let surl = "";
-    let tmp = e.row.id;
+    let tmp = sdata.row.id;
     tmp = tmp.substring(0,3);
     tmp = parseInt(tmp);
     seasonList.map((data)=>{
@@ -505,7 +505,6 @@ export default function TableSample() {
     let bgurl = "";
     bgurl = "./season/" + tmp + ".png";
     
-
     return(
       <div>
         
@@ -515,18 +514,20 @@ export default function TableSample() {
           <img src={aurl} style={{position:"absolute", width:"85%", zIndex:50, left:"10%", top:"5%"}}/>
           </div>
           <div style={{position:"absolute", width:"100%", zIndex:60, right:"31%" ,top:"15%", color:"white"}}>
-          <strong style={{fontSize:"21px"}}>{e.row.ovr}</strong>
+          <strong style={{fontSize:"18px"}}>{sdata.row.ovr}</strong>
           </div>
           <div style={{position:"absolute", width:"100%", zIndex:60, right:"31%" ,top:"22%", color:"white"}}>
-          <p style={{fontSize:"12px"}}>{e.row.mainPosition[0]}</p>
+          <p style={{fontSize:"10px"}}>{sdata.row.mainPosition[0]}</p>
           </div>
-          <div style={{position:"absolute", width:"100%", zIndex:60, top:"75%", left:"10%",fontSize:"12px"}}>
-          <img src={surl} style={{position:"absolute", width:"13%", marginRight:"30px"}}/>
-          {e.row.name}
+          <div style={{position:"absolute", width:"100%", zIndex:60, top:"73%", left:"5%", textAlign:"left"}}>
+          <img src={surl} style={{ width:"14%"}}/>
+          </div>
+          <div style={{position:"absolute", width:"100%", zIndex:60, top:"75%", left:"11%", maxHeight : "13px", fontSize:"10px", maxWidth: "100px"}}>
+          {sdata.row.name.length > 9 ? sdata.row.name.substr(0, 8) + "..." : sdata.row.name}
           </div>
           <div style={{position:"absolute", width:"100%", zIndex:70, top:"75%", color:"black"}}>
-          <img src="./pngegg.png"/>
-          <p style={{fontSize:"16px"}}>{e.row.paySide}</p>
+          <img src="/pngegg.png"/>
+          <p style={{fontSize:"16px"}}>{sdata.row.paySide}</p>
           </div>
         </div>
         
@@ -612,10 +613,10 @@ export default function TableSample() {
             >
               <Typography>상세 검색</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails  sx={{width:"100%"}} >
 
               {/* 시즌 s */}
-              <Grid  sx={{mt:1,mb:3}} >
+              <Grid  sx={{mt:1,mb:3, width:"100%"}} >
               <Typography id="input-slider" gutterBottom>
                 시즌
                 <br/>
@@ -642,117 +643,27 @@ export default function TableSample() {
               >전체선택</ToggleButton>
               </Typography>
              
-              <ToggleButtonGroup size="small" color='secondary' value={season} onChange={(e, v)=>{
+              <ToggleButtonGroup sx={{pl:0.3}} style={{flexWrap:"wrap", flexDirection: "row"}} size="small" color='secondary' value={season} onChange={(e, v)=>{
               setSeason(v);
               console.log(v);
             }} aria-label="Small sizes">
                 {
                 seasonList.map((n,i) => {
-                  if(i++ < 24){
                     return (  
-                        <ToggleButton sx={{m:0.5}}  aria-label="Small sizes"  key={i} value={String(n.seasonId)} onClick={(e)=>{console.log()
+                        <ToggleButton sx={{m:0.3}}  aria-label="Small sizes"  key={i} value={String(n.seasonId)} onClick={(e)=>{console.log()
                         }}>
                         <img
                           loading="lazy"
-                          width="20"
                           src={n.seasonImg}
                           alt="Season"
                         /> 
                         </ToggleButton> 
                     )
-                  }
-                })
-              }
+                  })
+                }
+              
               </ToggleButtonGroup>
-              <ToggleButtonGroup size="small" color='secondary' value={season} onChange={(e, v)=>{
-              setSeason(v);
-              console.log(v);
-              }} aria-label="Small sizes">
-               {
-                seasonList.map((n,i) => {
-                  if(i++ >= 24 && i < 49){
-                    return (  
-                        <ToggleButton sx={{m:0.5}} aria-label="Small sizes" key={i} value={String(n.seasonId)} onClick={(e)=>{console.log()
-                        }}>
-                        <img
-                          loading="lazy"
-                          width="20"
-                          src={n.seasonImg}
-                          alt="Season"
-                        /> 
-                        </ToggleButton> 
-                    )
-                  }
-                })
-              }
-              </ToggleButtonGroup>
-              <ToggleButtonGroup size="small" color='secondary' value={season} onChange={(e, v)=>{
-              setSeason(v);
-              console.log(v);
-              }} aria-label="Small sizes">
-               {
-                seasonList.map((n,i) => {
-                  if(i++ >= 48 && i < 73){
-                    return (  
-                        <ToggleButton sx={{m:0.5}} aria-label="Small sizes" key={i} value={String(n.seasonId)} onClick={(e)=>{console.log()
-                        }}>
-                        <img
-                          loading="lazy"
-                          width="20"
-                          src={n.seasonImg}
-                          alt="Season"
-                        /> 
-                        </ToggleButton> 
-                    )
-                  }
-                })
-              }
-              </ToggleButtonGroup>
-              <ToggleButtonGroup size="small" color='secondary' value={season} onChange={(e, v)=>{
-              setSeason(v);
-              console.log(v);
-              }} aria-label="Small sizes">
-               {
-                seasonList.map((n,i) => {
-                  if(i++ >= 72 && i < 97){
-                    return (  
-                        <ToggleButton sx={{m:0.5}} aria-label="Small sizes" key={i} value={String(n.seasonId)} onClick={(e)=>{console.log()
-                        }}>
-                        <img
-                          loading="lazy"
-                          width="20"
-                          src={n.seasonImg}
-                          alt="Season"
-                        /> 
-                        </ToggleButton> 
-                    )
-                  }
-                })
-              }
-              </ToggleButtonGroup>
-              <ToggleButtonGroup size="small" color='secondary' value={season} onChange={(e, v)=>{
-              setSeason(v);
-              console.log(v);
-              }} aria-label="Small sizes">
-               {
-                seasonList.map((n,i) => {
-                  if(i++ >= 96 && i < 121){
-                    return (  
-                        <ToggleButton sx={{m:0.5}} aria-label="Small sizes" key={i} value={String(n.seasonId)} onClick={(e)=>{console.log()
-                        }}>
-                        <img
-                          loading="lazy"
-                          width="20"
-                          src={n.seasonImg}
-                          alt="Season"
-                        /> 
-                        </ToggleButton> 
-                    )
-                  }
-                })
-              }
-              </ToggleButtonGroup>
-            
+    
               </Grid>
               {/* 시즌 e */}
 
@@ -1794,7 +1705,7 @@ export default function TableSample() {
                         scope="row"
                         padding="none"
                         align="center"
-                        style={{height: 150,width: 130, overflow: "hidden", backgroundImage: "./season.{row.id}"}}
+                        style={{height: 120,width: 100, overflow: "hidden", backgroundImage: "./season.{row.id}"}}
 
                       >
                         {

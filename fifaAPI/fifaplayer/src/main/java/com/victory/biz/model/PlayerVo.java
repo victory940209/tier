@@ -139,6 +139,8 @@ public class PlayerVo {
 	private List<String> clubName;
 	// 클럽이름
 	private List<TeamcolorVo> teamColor;
+	// 이미지
+	private String img;
 	// 가격
 	private int pay;
 

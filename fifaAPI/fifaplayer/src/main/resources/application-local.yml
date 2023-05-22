@@ -8,7 +8,7 @@ spring:
     file: /data1/api/fifausers.pid
   data:
     mongodb:
-      host: ec2-13-209-40-73.ap-northeast-2.compute.amazonaws.com
+      host: 43.201.236.116
       port: 27017
       database: DB_TIER_FIFA
       authentication-database: admin 

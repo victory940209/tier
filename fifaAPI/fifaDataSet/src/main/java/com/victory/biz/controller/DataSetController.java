@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.victory.biz.model.ResultVo;
 import com.victory.biz.service.CrawlingService;
 import com.victory.biz.service.CrawolingTService;
+import com.victory.biz.service.ModifyService;
 import com.victory.biz.service.PlayerService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -27,6 +28,9 @@ public class DataSetController {
 
 	@Autowired
 	CrawolingTService crawolingTService;
+
+	@Autowired
+	ModifyService modifyService;
 
 	@PostMapping(value = "/test")
 	public ResultVo test(@RequestBody Map<String, String> param){
@@ -72,6 +76,16 @@ public class DataSetController {
 	public ResultVo setTraitCrawling(){
 
 		crawolingTService.setTraitCrawling();
+
+		return ResultVo.builder().result("tete").resultMsg("성공").build();
+	}
+
+	@PostMapping(value = "/setSeasonImg")
+	// -- swagger 설정 -- swagger-ui에서 나오는 설명.
+	@Operation(summary = "setSeasonImg insert", description = "player에 season, img 추가")
+	public ResultVo setSeasonImg(){
+
+		modifyService.modifyPlayer();
 
 		return ResultVo.builder().result("tete").resultMsg("성공").build();
 	}
