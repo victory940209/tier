@@ -30,8 +30,8 @@ public class ModifyService {
 	public void modifyPlayer() {
 		List<SpidVo>  spidlist = mongoDBService.selectSpidAll();
 
-//		for(SpidVo spiddata: spidlist) {
-			SpidVo spiddata = spidlist.get(0);
+		for(SpidVo spiddata: spidlist) {
+
 			PlayerVo playerData = mongoDBService.selPlayer(spiddata.getKey()+"");
 			log.info("PlayerData : " + playerData);
 			String id = playerData.getId();
@@ -68,9 +68,9 @@ public class ModifyService {
 			}
 
 			log.info("playerData : " + playerData);
-//			mongoDBService.savePlayerSeason(playerData);
+			mongoDBService.savePlayerSeason(playerData);
 
-//		}
+		}
 
 	}
 
@@ -82,7 +82,7 @@ public class ModifyService {
 		try {
 			url = new URL(strUrl);
 			in = url.openStream();
-			out = new FileOutputStream("D:/git/tier/reactView/public/player/p" + id + ".png");
+			out = new FileOutputStream("C:/dev/workplace/tier/reactView/public/player/p" + id + ".png");
 			while (true) {
 				// 이미지를 읽어온다.
 				int data = in.read();

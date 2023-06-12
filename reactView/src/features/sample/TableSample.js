@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Divider, Checkbox, Card, Chip, FormControl, FormControlLabel, InputLabel, MenuItem, Paper, Rating, Select, Slider, ToggleButtonGroup, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow, TableSortLabel, TextField, ToggleButton, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Divider, Checkbox, Card, Chip, FormControl, FormControlLabel, InputLabel, MenuItem, Paper, Rating, Select, Slider, ToggleButtonGroup, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow, TableSortLabel, TextField, ToggleButton, Typography, colors } from "@mui/material";
 import { visuallyHidden } from "@mui/utils";
 import * as React from 'react';
 import { useNavigate } from 'react-router';
@@ -12,7 +12,7 @@ import MuiInput from '@mui/material/Input';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { pink, green, blue, yellow } from "@mui/material/colors";
-
+import usePayCrawling from '../../fragments/crawling/crawlingPay';
 
 
 const Input = styled(MuiInput)`
@@ -49,18 +49,6 @@ const headCells = [
     align: 'center',
     disablePadding: false,
     label: 'ovr',
-  },
-  {
-    id: 'lfoot',
-    align: 'center',
-    disablePadding: false,
-    label: '왼발',
-  },
-  {
-    id: 'rfoot',
-    align: 'center',
-    disablePadding: false,
-    label: '오른발',
   },
   {
     id: 'pay',
@@ -272,6 +260,7 @@ export default function TableSample() {
   const [seasonList,setSeasonList] = React.useState([]);
   const [traitsList,setTraitsList] = React.useState([]);
   const [teamcolorList,setTeamcolorList] = React.useState([""]);
+  const Crawling = usePayCrawling();
   const req = useReq();
   const nav = useNavigate();
 
@@ -335,26 +324,13 @@ export default function TableSample() {
   React.useEffect(()=> {
     // 이곳이 document.ready() 부분~~
     getData();
+    // Crawling.getHtml();
 
   },[page, order, orderBy, rowsPerPage]);
 
 
   const testData = () => {
-    let seasonNm = [""];
 
-    if(season.length == seasonList.length || season == null){
-      console.log("all");
-    }else{
-      season.map((n)=>{
-        seasonList.map((m)=>{
-          if(n == m.seasonId){
-            let seasonNmstr = m.className.replaceAll(" ", "").replaceAll("C–", "");
-            seasonNm.push(seasonNmstr.substring(0, seasonNmstr.indexOf("(")));
-          }
-        })
-        
-      })
-    }
     req.post({
       url: 'http://localhost:9000/getPlayer',
     params : {
@@ -362,7 +338,7 @@ export default function TableSample() {
       rowsPerPage: rowsPerPage,
       key: "",
       name: name,
-      season: seasonNm,
+      season: season,
       paySide: paySide,
       ovr: ovr,
       mainPosition: SetmainPosition(),
@@ -488,9 +464,8 @@ export default function TableSample() {
 
   const setImage = (sdata) =>{
     // 액션 이미지
-    let aurl = "https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p" + sdata.row.id +".png";
-   
-    
+
+
     // 시즌 이미지
     let surl = "";
     let tmp = sdata.row.id;
@@ -511,7 +486,7 @@ export default function TableSample() {
         <div className="nation"style={{position:"relative", textAlign:"center",width:"100%"}}>
           <img src={bgurl} style={{position:"relative", textAlign:"center",width:"100%", zIndex:0}}/>
           <div style={{position:"absolute", width:"100%", zIndex:50,  left:"5%", top:"20%"}}>
-          <img src={aurl} style={{position:"absolute", width:"85%", zIndex:50, left:"10%", top:"5%"}}/>
+          <img src={sdata.row.img} loading="lazy" style={{position:"absolute", width:"85%", zIndex:50, left:"10%", top:"5%"}}/>
           </div>
           <div style={{position:"absolute", width:"100%", zIndex:60, right:"31%" ,top:"15%", color:"white"}}>
           <strong style={{fontSize:"18px"}}>{sdata.row.ovr}</strong>
@@ -519,15 +494,17 @@ export default function TableSample() {
           <div style={{position:"absolute", width:"100%", zIndex:60, right:"31%" ,top:"22%", color:"white"}}>
           <p style={{fontSize:"10px"}}>{sdata.row.mainPosition[0]}</p>
           </div>
-          <div style={{position:"absolute", width:"100%", zIndex:60, top:"73%", left:"5%", textAlign:"left"}}>
+          <div style={{position:"absolute", width:"100%", zIndex:60, top:"73%", left:"8%", textAlign:"left"}}>
           <img src={surl} style={{ width:"14%"}}/>
           </div>
-          <div style={{position:"absolute", width:"100%", zIndex:60, top:"75%", left:"11%", maxHeight : "13px", fontSize:"10px", maxWidth: "100px"}}>
+          <div style={{position:"absolute", width:"100%", zIndex:60, top:"75%", left:"10%", maxHeight : "13px", fontSize:"10px", maxWidth: "100px"}}>
           {sdata.row.name.length > 9 ? sdata.row.name.substr(0, 8) + "..." : sdata.row.name}
           </div>
-          <div style={{position:"absolute", width:"100%", zIndex:70, top:"75%", color:"black"}}>
-          <img src="/pngegg.png"/>
-          <p style={{fontSize:"16px"}}>{sdata.row.paySide}</p>
+          <div style={{position:"absolute", width:"100%", zIndex:60, top:"78%", color:"black"}}>
+          <strong>
+          <img src="/pngegg.png" style={{position:"absolute", width:"15%", zIndex:70, left:"42%", top:"22%"}} />
+          <p style={{fontSize:"10px"}}>{sdata.row.paySide}</p>
+          </strong>
           </div>
         </div>
         
@@ -1716,8 +1693,6 @@ export default function TableSample() {
                       <TableCell align="center">{row.name}</TableCell>
                       <TableCell align="center">{row.paySide}</TableCell>
                       <TableCell align="center">{row.ovr}</TableCell>
-                      <TableCell align="center">{row.lfoot}</TableCell>
-                      <TableCell align="center">{row.rfoot}</TableCell>
                       <TableCell align="center">{row.pay}</TableCell>
                     </TableRow>
                   );
